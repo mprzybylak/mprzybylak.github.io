@@ -6,7 +6,6 @@ tags: [splunk, regex]
 ---
 
 # TODO
-1. look into docs to see if there is anything interesting to add
 2. Find interesting links about regex groups
 3. Link to regex debuger?
 4. Change name of file to match title
@@ -53,6 +52,8 @@ In order to extract just file names we can use rex command in the following way
 rex field=files (?<filename>\w*).txt
 ```
 _(Small hint: if your regexp contains spaces put it inside quotes - otherwise you will have syntax error)_
+
+It is possible to extract multiple fields at once in one run of `rex` command
 
 ## Summary
 
