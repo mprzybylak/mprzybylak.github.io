@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Using rex command to extract fields in Splunk"
-date:   2019-06-26 21:02:00 +0200
+date:   2019-06-30 19:52:00 +0200
 tags: [splunk, regex]
 ---
 
