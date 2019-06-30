@@ -5,16 +5,9 @@ date:   2019-06-26 21:02:00 +0200
 tags: [splunk, regex]
 ---
 
-# TODO
-4. Change name of file to match title
-5. Check language
-6. Change date for current
-
----
-
 In one of the projects that I'm currently working we are using Splunk as a common logs/metrics viewer. It is a very powerful tool but it took me some time before I started to feel comfortable with it. One of the most often used command is `rex`.
 
-Among couple of things you can do with `rex` command - today I would like quickly talk about most basic feature - extracting fields with regexp. To be more strict - with unanchored regex named capture groups. I've never been knowledgable about regexp - and because of that it was hard for me to understand how `rex` works. Because of that - let me start with quickly introduction of those regexp related concepts.
+Among couple of things you can do with `rex` command - today I would like quickly talk about most basic feature - extracting fields with regexp. To be more strict - with unanchored named capture groups. I've never been very knowledgable about regexp - and because of that it was hard for me to understand how `rex` works. Let me start then with quickly introduction of those regexp related concepts.
 
 ## Unanchored regexp
 
@@ -36,7 +29,7 @@ Probably the most basic syntax for `rex` command will looks like this:
 rex field=[name] [regex]
 ```
 
-The `regex` part is a regex with named captured group inside that we want to use to extract field. Name of the group will be name of new field. The `name` is a name of the field that we would like use our regex on.
+The `regex` part is a regular expression with named captured group inside, that we want to use to extract field. Name of the group will be a name of new field. The `name` is a name of the field that we would like use our regex on.
 
 Let's say that we have a logs with field `files` that contains comma separated names of the files like this:
 
